@@ -1,9 +1,8 @@
-.bodySvg {
+body {
+    background-image:url("gerah.png");
     background-size: cover;
     width: 100%;
-    z-index: -1;
-    color: yellow;
-    fill:yellow;
+    z-index:-1;
 }
 
 path {
