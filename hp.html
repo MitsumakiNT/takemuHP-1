@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="toggle.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="bootstrap-reboot.css">
+  <link rel="stylesheet" href="hamburger.css">
+  <link rel="stylesheet" href="Common.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Spicy+Rice&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f5d218b5f6.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700&display=swap" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<header>
+  <div class="inner">
+  <img src="newone.svg" class="logo">
+  <p>YUKI TAKEMURA</p>
+  <nav class="global-nav">
+    <ul class="global-nav__list">
+      <li class="global-nav__item"><a href="">SURVICE</a></li>
+      <li class="global-nav__item"><a href="">WORKS</a></li>
+      <li class="global-nav__item"><a href="">PRICE</a></li>
+      <li class="global-nav__item"><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+  <div class="hamburger" id="js-hamburger">
+    <span class="hamburger__line hamburger__line--1"></span>
+    <span class="hamburger__line hamburger__line--2"></span>
+    <span class="hamburger__line hamburger__line--3"></span>
+  </div>
+  <div class="black-bg" id="js-black-bg"></div>
+</div>
+</header>
+<main>
+<div class="yourChoise">
+  <p>your choise is…</p>
+  <div class="choiseItems"><div class="choiseCircle"></div><p class="kakeru">×</p><img src="gerahIcon.png" class="choiseIcon"></div>
+  <div class="bodyMessage"><p>DESIGN<br>YOUR<br>WEBSITE</p></div>
+</div>
+
+<div class="toggles">
+  <div class="toggle-wrapper">
+    <div class="toggle transparent">
+      <input id="transparent" type="checkbox"/>
+      <label class="toggle-item" for="transparent"></label>
+    </div>
+  </div>
+  <div class="toggle-wrapper">
+    <div class="toggle transBlue">
+      <input id="transBlue" type="checkbox"/>
+      <label class="toggle-item" for="transBlue"></label>
+    </div>
+  </div>
+  <div class="toggle-wrapper">
+    <div class="toggle transGreen">
+      <input id="transGreen" type="checkbox"/>
+      <label class="toggle-item" for="transGreen"></label>
+    </div>
+  </div>
+  <div class="toggle-wrapper">
+    <div class="toggle transRed">
+      <input id="transRed" type="checkbox"/>
+      <label class="toggle-item" for="transRed"></label>
+    </div>
+  </div>
+</div>
+<div class="cross"><h1>×</h1></div>
+<div class="animals">
+  <img src="gerahIcon.png" class="animal">
+  <img src="zebraIcon2.png" class="animal">
+  <img src="cowIcon2.png" class="animal">
+  <img src="pantherIcon2.png" class="animal">
+</div>
+
+<div class="contents">
+  <h1 class="strong rem3">CONTENTS</h1>
+  <div class="homepage">
+    <h1>Homepage</h1>
+    <p>ホームページ作成</p>
+  </div>
+  <div class="blog">
+    <h1>Blog</h1>
+    <p>ブログサイト作成</p>
+  </div>
+  <div class="EC">
+      <h1>ECsite</h1>
+    <p>オンラインショップサイト作成</p>
+  </div>
+  <div class="about">
+    <h1>ABOUT</h1>
+    <h2>竹村 勇輝</h2>
+    <img src="takemu2.png" class="takemu">
+    <h2>自己紹介</h2>
+    <p>
+      フリーランスのwebデザイナー兼プログラマー。<br>
+      <br>
+      新卒で教育業界に従事。 <br>
+      最年少教室責任者としての傍ら<br>
+      HPデザインや広報物の作成を担当し、<br>大きな反響を得る。<br>
+      その際にデザインの可能性を感じ、<br>独学で勉強後フリーランスへ。<br>
+      <br>
+      1つ1つの案件に対して真摯にクライアントと<br>
+      向き合い、デザインからコーディングまで<br>
+      一貫して請け負うことで、ご要望に沿った<br>
+      確かなwebサイト制作を大切にしています。</p>
+      <h2>所在地</h2>
+      <p>大阪市</p>
+      <h2>連絡先</h2>
+      <p>takemura1293@gmail.com</p>
+      <h2>事業内容</h2>
+      <p>web制作コンサルティング<br>
+        デザイン全般<br>
+        コーディング</p>
+      <i class="fab fa-twitter"></i>
+  </div>
+  <div class="footNavis">
+    <a class="footNavi">SURVICE</a>
+    <a class="footNavi">WORKS</a>
+    <a class="footNavi">ORDER GUIDE</a>
+    <a class="footNavi" href="contact.html">CONTACT</a>
+  </div>
+</div>
+</main>
+<footer>
+</footer>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script>
+  $(function() {
+
+    function toggleNav() {
+  var body = document.body;
+  var hamburger = document.getElementById('js-hamburger');
+  var blackBg = document.getElementById('js-black-bg');
+  hamburger.addEventListener('click', function() {
+    body.classList.toggle('nav-open');
+  });
+  blackBg.addEventListener('click', function() {
+    body.classList.remove('nav-open');
+  });
+}
+toggleNav();
+
+$('.animal').click(function(){
+if ($(this).hasClass('on')) {
+
+} else {
+  $('animal').removeClass('on');
+  $(this).addClass('on');
+}
+});
+
+
+
+  });
+</script>
+</body>
+</html>

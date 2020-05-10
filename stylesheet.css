@@ -1,0 +1,152 @@
+.test {
+    width: 100%;
+    height: 20px;
+    background-color: black;
+}
+
+body {
+    background-image:url( "gerahBack.png");
+    background-size: cover;
+    width: 100%;
+    z-index: -1;
+}
+
+path {
+    fill: rgba(0,0,0,0);  /* fill: none; の代わり */
+  }
+
+.yourChoise {
+    width: 100%;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.yourChoise p {
+    font-size: 1.5rem;
+    padding: 0 10px;
+}
+
+.choiseItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: turquoise;
+}
+
+.choiseCircle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: yellow;
+    padding-right: 5px;
+    line-height: 40px;
+}
+
+.kakeru {
+    line-height: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.choiseIcon {
+    width: 40px;
+    height: 40px;
+}
+
+.bodyMessage {
+	background: url("colorful.jpg") no-repeat center top;
+    background-size: cover;
+    text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    z-index: 1;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+.bodyMessage p {
+    width: 100%;
+    margin: 0;
+    font-weight: 600;
+    font-size: 6rem;
+    line-height: 0.9;
+    color: #000;
+    background-color: white;
+    mix-blend-mode: screen;
+    padding: 2rem 0;
+}
+
+.toggles {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    background-color: #e6e6fa;
+}
+
+.cross {
+    width: 100%;
+    height: 0px;
+    background-color: snow;
+}
+
+.cross h1 {
+    margin-bottom: 0;
+    transform: translate(0,-60%);
+    font-size: 3rem;
+}
+
+.animals {
+    height: 80px;
+    width: 100%;
+    background-color: turquoise;
+    display: flex;
+    padding: 2.5%;
+}
+
+.animal {
+    height: auto;
+    width: 25%;
+    flex: 1;
+}
+
+.contents {
+    height: 300px;
+}
+
+.contents :fiest-child h1{
+    font-size: 3rem;
+}
+
+.homepage {
+    height: 200px; /*仮置き*/
+}
+
+.about {
+    height: 900px;
+    width: 345px;
+    background-color: rgba(255,255,255,0.7);
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about p {
+    padding-bottom: 15px;
+}
+
+.about:nth-last-child(2) p{
+    padding-bottom: 0px;
+}
+
+.fab {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.takemu {
+    height: auto;
+    width: 250px ;
+}

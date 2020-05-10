@@ -1,0 +1,14 @@
+main {
+    padding-top: 70px;
+    height: 600px;
+    width: 100%;
+}
+
+main h1 {
+    font-size: 3rem;
+    padding-bottom: 3rem;
+}
+
+p {
+    line-height: 2rem;
+}

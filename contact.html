@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-reboot.css">
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="Common.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="inner">
+        <img src="newone.svg" class="logo">
+        <p>YUKI TAKEMURA</p>
+        <nav class="global-nav">
+          <ul class="global-nav__list">
+            <li class="global-nav__item"><a href="">SURVICE</a></li>
+            <li class="global-nav__item"><a href="">WORKS</a></li>
+            <li class="global-nav__item"><a href="">PRICE</a></li>
+            <li class="global-nav__item"><a href="hp.html">HOME</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger" id="js-hamburger">
+          <span class="hamburger__line hamburger__line--1"></span>
+          <span class="hamburger__line hamburger__line--2"></span>
+          <span class="hamburger__line hamburger__line--3"></span>
+        </div>
+        <div class="black-bg" id="js-black-bg"></div>
+      </div>
+      </header>
+    <main>
+        <div>
+            <h1>CONTACT</h1>
+            <p>お問い合わせやご依頼は<br>
+                下記メールアドレスよりご連絡ください。<br>
+                原則翌日までにご連絡いたします。<br>
+                <br>
+                takemura1293@gmail.com</p>
+        </div>
+    </main>
+      
+
+      <div class="footNavis">
+        <a class="footNavi">SURVICE</a>
+        <a class="footNavi">WORKS</a>
+        <a class="footNavi" >ORDER GUIDE</a>
+        <a class="footNavi" href="hp.html">HOME</a>
+      </div>
+      <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script>
+  $(function() {
+
+    function toggleNav() {
+  var body = document.body;
+  var hamburger = document.getElementById('js-hamburger');
+  var blackBg = document.getElementById('js-black-bg');
+  hamburger.addEventListener('click', function() {
+    body.classList.toggle('nav-open');
+  });
+  blackBg.addEventListener('click', function() {
+    body.classList.remove('nav-open');
+  });
+}
+toggleNav();
+  });
+</script>
+</body>
+</html>

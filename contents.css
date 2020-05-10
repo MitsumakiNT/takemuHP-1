@@ -1,0 +1,11 @@
+main {
+    margin-top: 100px;
+    height: 600px;
+    width: 100%;
+    background-color: slateblue;
+}
+
+main h1 {
+    font-size: 3rem;
+    color: slateblue;
+}
