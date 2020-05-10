@@ -1,14 +1,10 @@
-.test {
-    width: 100%;
-    height: 20px;
-    background-color: black;
-}
-
 body {
-    background-image:url( "gerahBack.png");
+    background-image:url( "pantherBack.svg");
     background-size: cover;
     width: 100%;
     z-index: -1;
+    color: yellow;
+    fill:yellow;
 }
 
 path {
